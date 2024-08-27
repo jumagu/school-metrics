@@ -16,14 +16,10 @@ import {
 
 import { LoginPage, AuthLayout } from "./modules/auth/";
 import {
-  TeacherClass,
   TeacherLayout,
-  TeacherReport,
-  TeacherCalendar,
   TeacherChatPage,
-  TeacherClassChosen,
   TeacherContactsPage,
-  TeacherClassStudents,
+  TeacherSubjectsPage,
 } from "./modules/teacher";
 import {
   ParentsLayout,
@@ -76,17 +72,13 @@ const router = createBrowserRouter([
         ),
         children: [
           {
-            path: "class",
-            element: <TeacherClass />,
+            path: "subjects",
+            element: <TeacherSubjectsPage />,
           },
-          {
-            path: "class/:classId",
-            element: <TeacherClassChosen />,
-          },
-          {
-            path: "class/students",
-            element: <TeacherClassStudents />,
-          },
+          // {
+          //   path: "subject/student/:studentId",
+          //   element: <TeacherReport />,
+          // },
           {
             path: "contacts",
             element: <TeacherContactsPage />,
@@ -94,14 +86,6 @@ const router = createBrowserRouter([
           {
             path: "chat/:parentId",
             element: <TeacherChatPage />,
-          },
-          {
-            path: "class/student/report/:studentId/:courseId",
-            element: <TeacherReport />,
-          },
-          {
-            path: "calendar",
-            element: <TeacherCalendar />,
           },
           {
             path: "*",
@@ -138,7 +122,7 @@ const router = createBrowserRouter([
           },
           {
             path: "*",
-            element: <Navigate to="classmates" replace />,
+            element: <Navigate to="my-child/overview" replace />,
           },
         ],
       },

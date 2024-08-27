@@ -1,17 +1,4 @@
 import {
-  Chat,
-  Class,
-  Close,
-  People,
-  School,
-  GridView,
-  AutoGraph,
-  Dashboard,
-  SquareFoot,
-  BorderColor,
-  FamilyRestroom,
-} from "@mui/icons-material";
-import {
   Box,
   List,
   Drawer,
@@ -21,90 +8,19 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import { Close } from "@mui/icons-material";
 
+import {
+  ADMIN_OPTIONS,
+  PARENT_OPTIONS,
+  STUDENT_OPTIONS,
+  PROFESSOR_OPTIONS,
+} from "../../config/sidebar.config";
 import { SideBarItem } from "./SideBarItem";
-
 import { useAuthStore, useUiStore } from "../../hooks";
 
 const drawerWidth = 300;
 const drawerBackgroundColor = "#abd1c6";
-
-const parentOptions = [
-  {
-    text: "Overview",
-    path: "/parents/my-child/overview",
-    icon: <GridView></GridView>,
-  },
-  {
-    text: "Performance",
-    path: "/parents/my-child/performance",
-    icon: <AutoGraph></AutoGraph>,
-  },
-  {
-    text: "Chat",
-    path: "/parents/contacts",
-    icon: <Chat></Chat>,
-  },
-];
-
-const studentOptions = [
-  {
-    text: "Overview",
-    path: "/student/overview",
-    icon: <GridView></GridView>,
-  },
-  {
-    text: "Performance",
-    path: "/student/performance",
-    icon: <AutoGraph></AutoGraph>,
-  },
-];
-
-const professorOptions = [
-  {
-    text: "Classes",
-    path: "/teacher/class",
-    icon: <Class></Class>,
-  },
-  {
-    text: "Chat",
-    path: "/teacher/contacts",
-    icon: <Chat></Chat>,
-  },
-];
-
-const adminOptions = [
-  {
-    text: "Dashboard",
-    path: "/admin/dashboard",
-    icon: <Dashboard></Dashboard>,
-  },
-  {
-    text: "Users",
-    path: "/admin/users",
-    icon: <People></People>,
-  },
-  {
-    text: "Students",
-    path: "/admin/students",
-    icon: <School></School>,
-  },
-  {
-    text: "Teachers",
-    path: "/admin/teachers",
-    icon: <BorderColor></BorderColor>,
-  },
-  {
-    text: "Parents",
-    path: "/admin/parents",
-    icon: <FamilyRestroom></FamilyRestroom>,
-  },
-  {
-    text: "Academic Areas",
-    path: "/admin/academic-areas",
-    icon: <SquareFoot></SquareFoot>,
-  },
-];
 
 export const SideBar = () => {
   const { user } = useAuthStore();
@@ -114,13 +30,13 @@ export const SideBar = () => {
 
   const options =
     type_user === "PARENTS"
-      ? parentOptions
+      ? PARENT_OPTIONS
       : type_user === "STUDENT"
-      ? studentOptions
+      ? STUDENT_OPTIONS
       : type_user === "PROFESSOR"
-      ? professorOptions
+      ? PROFESSOR_OPTIONS
       : type_user === "ADMIN"
-      ? adminOptions
+      ? ADMIN_OPTIONS
       : [];
 
   const drawerContent = (

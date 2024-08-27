@@ -1,4 +1,5 @@
 import {
+  Icon,
   ListItem,
   ListItemText,
   ListItemIcon,
@@ -11,7 +12,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 interface SideBarItemProps {
   text: string;
   path: string;
-  icon: JSX.Element;
+  icon: string;
 }
 
 export const SideBarItem = ({ text, path, icon }: SideBarItemProps) => {
@@ -30,7 +31,9 @@ export const SideBarItem = ({ text, path, icon }: SideBarItemProps) => {
         onClick={handleClick}
         selected={path === location.pathname}
       >
-        <ListItemIcon>{icon}</ListItemIcon>
+        <ListItemIcon>
+          <Icon>{icon}</Icon>
+        </ListItemIcon>
         <ListItemText primary={text} />
       </ListItemButton>
     </ListItem>

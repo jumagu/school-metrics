@@ -3,17 +3,7 @@ import { Pie } from "react-chartjs-2";
 
 import { Box } from "@mui/material";
 import { Evaluation } from "../../interfaces";
-
-const colors = [
-  "#FF7F7F", // Soft Red
-  "#FFB27F", // Soft Orange
-  "#FFF47F", // Soft Yellow
-  "#7FFF9F", // Soft Green
-  "#7FD4FF", // Soft Blue
-  "#B27FFF", // Soft Violet
-  "#FF7FB2", // Bright Pink
-  "#FFA77F", // Soft Coral
-];
+import { generateRandomColor } from "../../utils";
 
 interface EvalutionResultsChartProps {
   evaluations: Evaluation[];
@@ -27,7 +17,7 @@ export const EvaluationResultsChart = ({
     datasets: [
       {
         data: evaluations.map((ev) => ev.evaluationResult.mark),
-        backgroundColor: evaluations.map((_, i) => colors[i]),
+        backgroundColor: evaluations.map(() => generateRandomColor()),
         hoverOffset: 4,
       },
     ],

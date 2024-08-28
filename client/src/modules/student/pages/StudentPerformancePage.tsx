@@ -1,10 +1,10 @@
 import { useContextStudent } from "../hooks";
-import { Performance } from "../../../components";
+import { Performance, PerformanceSkeleton } from "../../../components";
 
 export default function StudentPerformancePage() {
   const { overviewData } = useContextStudent();
 
-  if (overviewData === null) return <p>Loading...</p>;
+  if (overviewData === null) return <PerformanceSkeleton />;
 
   return (
     <Performance

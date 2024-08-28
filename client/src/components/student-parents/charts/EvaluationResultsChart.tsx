@@ -2,8 +2,8 @@ import "chart.js/auto";
 import { Pie } from "react-chartjs-2";
 
 import { Box } from "@mui/material";
-import { Evaluation } from "../../interfaces";
-import { generateRandomColor } from "../../utils";
+import { Evaluation } from "../../../interfaces";
+import { generateRandomColor } from "../../../utils";
 
 interface EvalutionResultsChartProps {
   evaluations: Evaluation[];

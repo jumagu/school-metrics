@@ -2,9 +2,10 @@
 export { Chat } from "./chat/Chat";
 
 // Student & Parents
-export { Overview } from "./student-parents/Overview";
-export { Performance } from "./student-parents/Performance";
-export { OverviewSkeleton } from "./student-parents/OverviewSkeleton";
+export { Overview } from "./student-parents/overview/Overview";
+export { Performance } from "./student-parents/performance/Performance";
+export { OverviewSkeleton } from "./student-parents/overview/OverviewSkeleton";
+export { PerformanceSkeleton } from "./student-parents/performance/PerformanceSkeleton";
 
 // Teacher & Parents
 export { ContactsTable } from "./teacher-parents/ContactsTable";

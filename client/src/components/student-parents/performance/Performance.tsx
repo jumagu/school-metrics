@@ -1,13 +1,15 @@
 import { Box } from "@mui/material";
 
-import { CustomCard } from "../ui/CustomCard";
-import { Evaluation } from "../../interfaces";
-import { generateRandomColor } from "../../utils";
+import { CustomCard } from "../../ui/CustomCard";
+import { Evaluation } from "../../../interfaces";
+import { generateRandomColor } from "../../../utils";
 
-import { BarChart } from "./BarChart";
-import { LineChart } from "./LineChart";
-import { RadarChart } from "./RadarChart";
-import { DoughnutChart } from "./DoughnutChart";
+import {
+  GradingProgressChart,
+  GradesByEvaluationChart,
+  EvaluationsByCourseChart,
+  GlobalEvaluationByCourseChart,
+} from "../charts";
 
 interface PerformanceProps {
   evaluations: Evaluation[];
@@ -63,7 +65,7 @@ export const Performance = ({ evaluations }: PerformanceProps) => {
           headingVariant="h5"
           sx={{ width: "100%" }}
         >
-          <LineChart data={data} />
+          <GradingProgressChart data={data} />
         </CustomCard>
 
         <CustomCard
@@ -71,7 +73,7 @@ export const Performance = ({ evaluations }: PerformanceProps) => {
           headingVariant="h5"
           sx={{ width: "100%" }}
         >
-          <RadarChart data={data} />
+          <GlobalEvaluationByCourseChart data={data} />
         </CustomCard>
       </Box>
 
@@ -86,7 +88,7 @@ export const Performance = ({ evaluations }: PerformanceProps) => {
           headingVariant="h5"
           sx={{ width: "100%" }}
         >
-          <DoughnutChart evaluations={evaluations} />
+          <GradesByEvaluationChart evaluations={evaluations} />
         </CustomCard>
 
         <CustomCard
@@ -94,7 +96,7 @@ export const Performance = ({ evaluations }: PerformanceProps) => {
           headingVariant="h5"
           sx={{ width: "100%" }}
         >
-          <BarChart data={data} />
+          <EvaluationsByCourseChart data={data} />
         </CustomCard>
       </Box>
     </Box>

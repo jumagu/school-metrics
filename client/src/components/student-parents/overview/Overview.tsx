@@ -9,12 +9,12 @@ import {
   ListItemButton,
 } from "@mui/material";
 
-import { OverviewData } from "../../interfaces";
-import { generateRandomColor } from "../../utils";
+import { OverviewData } from "../../../interfaces";
+import { generateRandomColor } from "../../../utils";
 
-import { CustomCard } from "../ui/CustomCard";
-import { EvaluationResultsChart } from "./EvaluationResultsChart";
 import { Comment } from "@mui/icons-material";
+import { CustomCard } from "../../ui/CustomCard";
+import { EvaluationResultsChart } from "../charts";
 
 const periods: Record<string, string> = {
   PRIMER_PERIODO: "1st Period",

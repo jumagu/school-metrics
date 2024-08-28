@@ -2,11 +2,13 @@ import { Box } from "@mui/material";
 
 import { Radar } from "react-chartjs-2";
 
-interface RadarChartProps {
+interface GlobalEvaluationByCourseChartProps {
   data: any;
 }
 
-export const RadarChart = ({ data: { labels, datasets } }: RadarChartProps) => {
+export const GlobalEvaluationByCourseChart = ({
+  data: { labels, datasets },
+}: GlobalEvaluationByCourseChartProps) => {
   const data = {
     labels: labels,
     datasets: datasets.map((dataset: any) => ({

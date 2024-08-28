@@ -2,11 +2,13 @@ import { Box } from "@mui/material";
 
 import { Bar } from "react-chartjs-2";
 
-interface BarChartProps {
+interface EvaluationsByCourseChartProps {
   data: any;
 }
 
-export const BarChart = ({ data }: BarChartProps) => {
+export const EvaluationsByCourseChart = ({
+  data,
+}: EvaluationsByCourseChartProps) => {
   return (
     <Box
       display="flex"

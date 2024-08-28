@@ -1,13 +1,15 @@
 import { Box } from "@mui/material";
 
 import { Doughnut } from "react-chartjs-2";
-import { generateRandomColor } from "../../utils";
+import { generateRandomColor } from "../../../utils";
 
-interface DoughnutChartProps {
+interface GradesByEvaluationChartProps {
   evaluations: any;
 }
 
-export const DoughnutChart = ({ evaluations }: DoughnutChartProps) => {
+export const GradesByEvaluationChart = ({
+  evaluations,
+}: GradesByEvaluationChartProps) => {
   const ranges = [5, 10, 15, 20];
   const rangeLabels = ["1-5", "6-10", "11-15", "16-20"];
   const distribution = new Array(rangeLabels.length).fill(0);

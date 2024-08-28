@@ -2,11 +2,13 @@ import { Box } from "@mui/material";
 
 import { Line } from "react-chartjs-2";
 
-interface LineChartProps {
+interface GradingProgressChartProps {
   data: any;
 }
 
-export const LineChart = ({ data: { labels, datasets } }: LineChartProps) => {
+export const GradingProgressChart = ({
+  data: { labels, datasets },
+}: GradingProgressChartProps) => {
   const data = {
     labels: labels,
     datasets: datasets.map((dataset: any) => ({

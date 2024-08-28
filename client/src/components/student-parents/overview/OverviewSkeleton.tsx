@@ -1,12 +1,8 @@
 import { Box, Skeleton } from "@mui/material";
 
-import { CustomCard } from "../ui/CustomCard";
+import { CustomCard } from "../../ui/CustomCard";
 
-interface OverviewSkeletonProps {
-  parentView?: boolean;
-}
-
-export const OverviewSkeleton = ({ parentView }: OverviewSkeletonProps) => {
+export const OverviewSkeleton = () => {
   return (
     <Box
       height={{ sm: "100%" }}
@@ -27,14 +23,6 @@ export const OverviewSkeleton = ({ parentView }: OverviewSkeletonProps) => {
           flexDirection={{ xs: "column", sm: "row", md: "column" }}
           gap={2}
         >
-          {parentView && (
-            <CustomCard
-              sx={{ width: "100%", height: { xs: "auto", md: "40%" } }}
-            >
-              <Skeleton variant="rounded" height="100%" />
-            </CustomCard>
-          )}
-
           <CustomCard
             sx={{
               width: "100%",

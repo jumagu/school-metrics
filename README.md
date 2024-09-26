@@ -1,5 +1,3 @@
-<a id="readme-top"></a>
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -93,7 +91,7 @@ If you do not have PostgreSQL or Docker installed, you can use a serverless plat
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/jumagu/school-metrics.git
    ```
 2. Install NPM packages in both server and client
 

@@ -89,7 +89,7 @@ const router = createBrowserRouter([
           },
           {
             path: "*",
-            element: <Navigate to="class" replace />,
+            element: <Navigate to="subjects" replace />,
           },
         ],
       },

@@ -107,7 +107,7 @@ const seedAcademicRecords = async (): Promise<void> => {
   console.log('Empezando a cargar notas de evaluaciones en la base de datos')
   const students: IStudents[] = await prisma.students.findMany()
   const courses: ICourses[] = await prisma.courses.findMany()
-  const evaluationNames = ['Examen Parcial', 'Examen Final', 'Trabajo en Clase', 'Proyecto', 'Presentación']
+  const evaluationNames = ['Partial exam', 'Final exam', 'Homework', 'Project', 'Presentation']
   for (const student of students) {
     const academicRecordCount = faker.number.int({ max: courses.length + 10, min: 1 })
     for (let i = 0; i < academicRecordCount; i++) {
@@ -127,7 +127,7 @@ const seedAcademicRecords = async (): Promise<void> => {
 
 const seedEvaluations = async (): Promise<void> => {
   const courses: ICourses[] = await prisma.courses.findMany()
-  const evaluationNames = ['Examen Parcial', 'Examen Final', 'Trabajo en Clase', 'Proyecto', 'Presentación']
+  const evaluationNames = ['Partial exam', 'Final exam', 'Homework', 'Project', 'Presentation']
   for (const course of courses) {
     const evaluationCount = faker.number.int({ min: 1, max: 5 }) // Número de evaluaciones por curso
     for (let i = 0; i < evaluationCount; i++) {

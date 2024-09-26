@@ -1,62 +1,62 @@
 [
   {
-    "name": "Matemáticas",
-    "description": "Estudio de los números, formas y patrones.",
+    "name": "Mathematics",
+    "description": "Study of numbers, shapes, and patterns.",
     "educational_level": "PRIMARY"
   },
   {
-    "name": "Ciencias Naturales",
-    "description": "Estudio de los fenómenos naturales y el mundo físico.",
+    "name": "Natural Sciences",
+    "description": "Study of natural phenomena and the physical world.",
     "educational_level": "PRIMARY"
   },
   {
-    "name": "Lengua y Literatura",
-    "description": "Estudio de la lengua y las obras literarias.",
+    "name": "Language and Literature",
+    "description": "Study of language and literary works.",
     "educational_level": "SECONDARY"
   },
   {
-    "name": "Historia",
-    "description": "Estudio de los eventos y procesos históricos.",
+    "name": "History",
+    "description": "Study of historical events and processes.",
     "educational_level": "SECONDARY"
   },
   {
-    "name": "Educación Física",
-    "description": "Desarrollo de las habilidades físicas y el conocimiento sobre la salud.",
+    "name": "Physical Education",
+    "description": "Development of physical skills and knowledge about health.",
     "educational_level": "SECONDARY"
   },
   {
-    "name": "Geografía",
-    "description": "Estudio de la superficie terrestre y sus características.",
+    "name": "Geography",
+    "description": "Study of the Earth's surface and its characteristics.",
     "educational_level": "PRIMARY"
   },
   {
-    "name": "Arte",
-    "description": "Exploración de diversas formas de expresión artística.",
+    "name": "Art",
+    "description": "Exploration of various forms of artistic expression.",
     "educational_level": "PRIMARY"
   },
   {
-    "name": "Música",
-    "description": "Estudio de la teoría y práctica musical.",
+    "name": "Music",
+    "description": "Study of musical theory and practice.",
     "educational_level": "PRIMARY"
   },
   {
-    "name": "Química",
-    "description": "Estudio de la composición y propiedades de la materia.",
+    "name": "Chemistry",
+    "description": "Study of the composition and properties of matter.",
     "educational_level": "SECONDARY"
   },
   {
-    "name": "Biología",
-    "description": "Estudio de los seres vivos y sus procesos vitales.",
+    "name": "Biology",
+    "description": "Study of living organisms and their life processes.",
     "educational_level": "SECONDARY"
   },
   {
-    "name": "Física",
-    "description": "Estudio de las propiedades y el comportamiento de la materia y la energía.",
+    "name": "Physics",
+    "description": "Study of the properties and behavior of matter and energy.",
     "educational_level": "SECONDARY"
   },
   {
-    "name": "Informática",
-    "description": "Estudio de los sistemas de computación y procesamiento de datos.",
+    "name": "Computer Science",
+    "description": "Study of computing systems and data processing.",
     "educational_level": "SECONDARY"
   }
 ]

@@ -85,6 +85,7 @@ export default main
  */
 
 import { PrismaClient } from '@prisma/client'
+import { faker } from '@faker-js/faker'
 import fs from 'fs'
 
 const prisma = new PrismaClient()
@@ -110,8 +111,8 @@ const main = async () => {
     const academicArea = academicAreas[index % academicAreas.length]
 
     return {
-      nombre: `Curso ${index + 1}`,
-      descripcion: `Descripción del curso ${index + 1}`,
+      nombre: `Course ${index + 1}`,
+      descripcion: faker.lorem.words(25),
       professor_id: professor.professor_id,
       area_academica_id: academicArea.academic_area_id
     }

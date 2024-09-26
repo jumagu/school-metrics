@@ -12,6 +12,7 @@ export { ContactsTable } from "./teacher-parents/ContactsTable";
 
 // Icons
 export { LockIcon } from "./icons/LockIcon";
+export { WrenchIcon } from "./icons/WrenchIcon";
 export { CompassIcon } from "./icons/CompassIcon";
 
 // UI

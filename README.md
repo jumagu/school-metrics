@@ -8,7 +8,7 @@
   <p align="center">
     Real-Time Student Insights, Enhanced Parent-Teacher Collaboration
     <br />
-    <a href="">View Demo</a>
+    <a href="https://school-metrics.vercel.app">View Demo</a>
   </p>
 </div>
 
@@ -115,3 +115,25 @@ If you do not have PostgreSQL or Docker installed, you can use a serverless plat
     cd client
     npm run dev
    ```
+
+### User Crendentials
+
+#### Admin
+
+- Email: admin@example.com
+- Password: admin123
+
+#### Student
+
+- Email: 1luisa.lorenzo@example.com
+- Password: Av9Qj9Be
+
+#### Parent
+
+- Email: 4alejandro.saez@example.com
+- Password: 8aacaBig
+
+#### Teacher
+
+- Email: 8gerardo.vidal@example.com
+- Password: mZK5aolP

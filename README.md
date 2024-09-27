@@ -108,6 +108,8 @@ If you do not have PostgreSQL or Docker installed, you can use a serverless plat
 4. Run the server
    ```sh
    cd server
+   npm run prisma:migrate:dev
+   npm run prisma:reset:dev
    npm run dev
    ```
 5. Run the client

@@ -28,6 +28,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#user-credentials">User Credentials</a></li>
       </ul>
     </li>
   </ol>
@@ -118,7 +119,7 @@ If you do not have PostgreSQL or Docker installed, you can use a serverless plat
     npm run dev
    ```
 
-### User Crendentials
+### User Credentials
 
 #### Admin
 

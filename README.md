@@ -103,7 +103,7 @@ If you do not have PostgreSQL or Docker installed, you can use a serverless plat
    npm install
    ```
 
-3. For both the server and the client, create a copy of the `.env.example` file that is in the env folder of each and rename it to `.env`, then assign the corresponding values to the variables
+3. For both the server and the client, create a copy of the `.env.sample` file that is in the env folder of each and rename it to `.env`, then assign the corresponding values to the variables
 
 4. Run the server
    ```sh

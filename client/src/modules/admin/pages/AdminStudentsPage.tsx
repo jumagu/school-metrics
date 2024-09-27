@@ -1,38 +1,41 @@
-import { Box } from "@mui/material";
-import { StudentProvider } from "../contexts";
+// import { Box } from "@mui/material";
+// import { StudentProvider } from "../contexts";
 
-import { useModal } from "../hooks";
-import { AddButton, StudentTable, StudentSearchBar } from "../components";
+// import { useModal } from "../hooks";
+// import { AddButton, StudentTable, StudentSearchBar } from "../components";
+import { Maintenance } from "../../../components";
 
 export default function AdminStudentsPage() {
-  const { openModal, closeModal, modalState } = useModal();
+  // const { openModal, closeModal, modalState } = useModal();
 
-  return (
-    <StudentProvider>
-      <Box
-        p={2}
-        height="auto"
-        maxHeight="100%"
-        bgcolor="white"
-        borderRadius={1}
-      >
-        <Box
-          display="flex"
-          flexDirection={{ xs: "column", sm: "row" }}
-          justifyContent="space-between"
-          pb={2}
-          gap={2}
-        >
-          <StudentSearchBar />
+  return <Maintenance />;
 
-          <AddButton onClick={() => openModal("create")} />
-        </Box>
+  // return (
+  //   <StudentProvider>
+  //     <Box
+  //       p={2}
+  //       height="auto"
+  //       maxHeight="100%"
+  //       bgcolor="white"
+  //       borderRadius={1}
+  //     >
+  //       <Box
+  //         display="flex"
+  //         flexDirection={{ xs: "column", sm: "row" }}
+  //         justifyContent="space-between"
+  //         pb={2}
+  //         gap={2}
+  //       >
+  //         <StudentSearchBar />
 
-        <StudentTable
-          openCreateModal={modalState.type === "create"}
-          closeCreateModal={closeModal}
-        />
-      </Box>
-    </StudentProvider>
-  );
+  //         <AddButton onClick={() => openModal("create")} />
+  //       </Box>
+
+  //       <StudentTable
+  //         openCreateModal={modalState.type === "create"}
+  //         closeCreateModal={closeModal}
+  //       />
+  //     </Box>
+  //   </StudentProvider>
+  // );
 }

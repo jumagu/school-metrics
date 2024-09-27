@@ -41,7 +41,7 @@ export default function AuthLayout() {
       <Box
         sx={{
           display: { xs: "flex", sm: "none" },
-          backgroundImage: { xs: `url(${shape1})` },
+          backgroundImage: { xs: `url("${shape1}")` },
           backgroundRepeat: "no-repeat",
           width: "430px",
           height: "116px",
@@ -54,7 +54,7 @@ export default function AuthLayout() {
       <Box
         sx={{
           display: { xs: "flex", sm: "none" },
-          backgroundImage: { xs: `url(${shape2})` },
+          backgroundImage: { xs: `url("${shape2}")` },
           backgroundRepeat: "no-repeat",
           width: "359px",
           height: "83px",

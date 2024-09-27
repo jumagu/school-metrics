@@ -4,8 +4,8 @@ import {
   MenuItem,
   TextField,
   CircularProgress,
-  type GridOwnProps,
 } from "@mui/material";
+import type { GridOwnProps } from "@mui/material/Grid";
 import type { UseFormRegister, FieldErrors } from "react-hook-form";
 
 type FormField = {

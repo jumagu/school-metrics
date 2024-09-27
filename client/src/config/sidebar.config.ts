@@ -31,8 +31,8 @@ export const STUDENT_OPTIONS = [
 
 export const PROFESSOR_OPTIONS = [
   {
-    text: "Classes",
-    path: "/teacher/class",
+    text: "Subjects",
+    path: "/teacher/subjects",
     icon: "class",
   },
   {
